@@ -7,6 +7,20 @@
 	<body>
 		<h1>Goodbye!</h1>
 		<p>It was nice having you here.</p>
-		<p>Say <%= link_to("Hello!", :action => "hello") %></p>
+		<p>
+			Say <%= link_to("Hello!", 	:action => "hello") %> <br />
+			See <%= link_to("files", 	:action => "files") %>
+		</p>
+		
+		
+		<h3>Displaying with -</h3>
+		<% 10.times do |count|%>
+			<%= count %>: testing <br />
+		<% end %>
+		
+		<h3>Displaying without -</h3>
+		<% 10.times do |count| %>
+			<%= count %>: testing two <br />
+		<% end %>
 	</body>
 </html>
