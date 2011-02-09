@@ -1,4 +1,9 @@
 Demo::Application.routes.draw do
+  get "testing/hello"
+
+  get "testing/bye"
+
+  get "say/hello"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

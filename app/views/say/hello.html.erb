@@ -6,5 +6,28 @@
 	</head>
 	<body>
 		<h1>Hello from Rails!</h1>
+		
+		<ul>
+			<li>Addtion: <%= 1 + 2 %></li>
+			<li>Concatenation: <%= "cow" + " boy" %></li>
+			<li>Time in one hour: <%= 1.hour.from_now %></li>
+			<li>It is now <%= @time %></li>
+		</ul>
+		
+		
+		<h3>Festive Version</h3>
+		<% 3.times do -%>
+			Ho! <br />
+		<% end %>
+		Merry Christmas!
+		
+		<h3>Count Down</h3>
+		<% 3.downto(1) do |count| -%>
+			<%= count %>...<br />
+		<% end -%>
+		Lift off!
+		
+		<h3>The method H</h3>
+		Email: <%= h("Ann & Bill <frazers@isp.email>") %>
 	</body>
 </html>

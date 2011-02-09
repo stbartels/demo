@@ -1,5 +1,5 @@
 class SayController < ApplicationController
-  def index
-    # Code for hello action
+  def hello
+   @time = Time.now
   end
 end
